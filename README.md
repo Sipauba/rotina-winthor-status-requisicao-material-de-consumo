@@ -1,8 +1,6 @@
+Se você tem interesse em ver a evolução do código do zero, este é o link que possui todas as versões do código: https://github.com/Sipauba/ESTUDO/tree/master/ensaio-nova-rotina-winthor
 
 # Consulta em banco de dados Oracle usando a biblioteca Tkinter em Python
-
-    
-    
 
 ## Introdução
 
