@@ -312,4 +312,4 @@ Este projeto, apesar de ter umaproposta bem simples, foi algo que desafiou meus 
 
 ## Caso alguém queira utilizar
 
-Caso seja necessário utilizar essa aplicação para outro banco de dados, é necessário buscar outra biblioteca específica para o banco em questão. Com relação ao código do programa, só será necessário substituir o trecho que trata a respeito da conexão com o banco de dados. 
+Caso seja necessário utilizar essa aplicação para outro banco de dados, é necessário buscar outra biblioteca específica para o banco em questão. Com relação ao código do programa, só será necessário substituir o trecho que trata a respeito da conexão com o banco de dados. Este é a pasta com o Oracle client que utilizei: https://drive.google.com/drive/folders/1eTUBgdArT-2DRLo5vJ-Dw295MU7-QpM0?usp=sharing
