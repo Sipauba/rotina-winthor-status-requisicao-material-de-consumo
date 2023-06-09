@@ -1,7 +1,6 @@
 from tkinter import *
 from tkinter import ttk
 from tkcalendar import *
-from babel import *
 import cx_Oracle
 
 # Parâmetros de conexão
