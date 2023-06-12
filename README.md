@@ -16,7 +16,7 @@ No WinThor existe uma rotina que permite aos usuários fazer solicitação de ma
 Tendo em vista o problema, eis a solução: criar uma aplicação com interface gráfica para o usuário de forma bem simples e que seja semelhante às outras rotinas do Winthor. Essa aplicação irá coletar algumas informações que não serão obrigatórias ao usuário para fazer a pesquisa, como o número da filial que solicitou, o numero da requisição, o intervalo de data e a situação da requisição, se aprovada, pendente, cancelada ou qualquer situação. Ao efetivar a consulta, os dados são exibidos em uma grid no centro da aplicação, simples assim.
 
 # O processo de desenvolvimento
-Neste tópico irei discorrer sobre alguns detalhes e particularidades do código e as principais dificuldades que encontrei durante o desenvolvimento.
+Neste tópico irei discorrer sobre alguns detalhes e particularidades do código e as principais dificuldades e erros que encontrei durante o desenvolvimento.
 ## - As bibliotecas utilizadas
 
 
@@ -310,4 +310,4 @@ Este projeto, apesar de ter umaproposta bem simples, foi algo que desafiou meus 
 
 ## Caso alguém queira utilizar
 
-Caso seja necessário utilizar essa aplicação para outro banco de dados, é necessário buscar outra biblioteca específica para o banco em questão. Com relação ao código do programa, só será necessário substituir o trecho que trata a respeito da conexão com o banco de dados. Este é a pasta com o Oracle client que utilizei: https://drive.google.com/drive/folders/1eTUBgdArT-2DRLo5vJ-Dw295MU7-QpM0?usp=sharing
+Caso seja necessário utilizar essa aplicação para outro banco de dados, é necessário buscar outra biblioteca específica para o banco em questão. Com relação ao código do programa, só será necessário substituir o trecho que trata a respeito da conexão com o banco de dados. Este é a pasta com o Oracle client que utilizei: https://drive.google.com/file/d/105eQe23NpuQVe3-J9Rb5qZJwUJ7u_sKj/view?usp=sharing
