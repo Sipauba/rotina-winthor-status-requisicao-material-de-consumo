@@ -2,12 +2,13 @@ from tkinter import *
 from tkinter import ttk
 from tkcalendar import *
 import cx_Oracle
+import datetime
 
 # Parâmetros de conexão
-host = '10.85.0.73'
-servico = 'XE'
-usuario = 'SYSTEM'
-senha = 'CAIXA'
+host = 'x.x.x.x'
+servico = 'xxxxxx'
+usuario = 'xxxxxxx'
+senha = 'xxxxx'
 
 # Encontra o arquivo que aponta para o banco de dados
 cx_Oracle.init_oracle_client(lib_dir="./instantclient_21_10")
@@ -39,7 +40,10 @@ def consultar():
         # Este trecho vai receber o valor das variáveis que receberam os valores da DateEntry e formatar de uma forma que seja possível fazer a consulta SQL no banco oracle
         data_ini = data_ini.strftime('%d-%b-%Y')
         data_fin = data_fin.strftime('%d-%b-%Y')
-        consulta += " AND DATA BETWEEN TO_DATE('{}', 'DD-MON-YYYY') AND TO_DATE('{}', 'DD-MON-YYYY')".format(data_ini, data_fin)
+        data_fim_adjusted = datetime.datetime.strptime(data_fin, '%d-%b-%Y') + datetime.timedelta(days=1)
+        data_fin = data_fim_adjusted.strftime('%d-%b-%Y')
+    
+        consulta += " AND DATA >= TO_DATE('{}', 'DD-MON-YYYY') AND DATA <= TO_DATE('{}', 'DD-MON-YYYY')".format(data_ini, data_fin)
     # Faz a verificação nos radios    
     if valor_radio.get() == 1:
         consulta += "AND SITUACAO = 'A'"
