@@ -300,7 +300,7 @@ Depois de gerar o executável esperava-se que a aplicação funcionasse normalme
 Essas linhas referem-se a um erro na biblioteca babel que já está incluida no python e que é responsável por interpretar valores númericos. Nesse caso essa biblioteca não estava conseguindo interpretar os valores de data no código, como se a biblioteca babel não estivesse importada no programa. Nesse caso, foi necessário "forçar" a importação do módulo babel no ato de criar o arquivo executável. Foi necessário incluir mais uma tag no código responsável por gerar o executável: 
 
 ```bash
-pyinstaller --add-data "./instantclient_21_10;./instantclient_21_10" --hidenimport --onefile --noconsole --hidden-import babel.numbers rotina.py
+pyinstaller --add-data "./instantclient_21_10;./instantclient_21_10" --onefile --noconsole --hidden-import babel.numbers rotina.py
 ```
 
 Feito isso, a aplicação funciona normalmente a partir do executável.
